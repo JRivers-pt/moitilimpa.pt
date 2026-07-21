@@ -70,6 +70,7 @@ body {
   color: var(--gray-800);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 a {
@@ -1141,15 +1142,25 @@ img {
     font-size: 1rem; /* prevent iOS zoom on input focus */
   }
 
-  /* Social cards */
-  .social-banner {
-    padding: 1.75rem 1.25rem;
+  /* Social cards - fix horizontal overflow */
+  .social-cards {
+    grid-template-columns: 1fr;
+    overflow: hidden;
   }
 
   .social-card {
     flex-direction: column;
     text-align: center;
     padding: 1.5rem 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .social-card h3,
+  .social-card p {
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   /* FAQ */
@@ -1173,13 +1184,31 @@ img {
     font-size: 1rem;
   }
 
-  /* WhatsApp button */
+  /* WhatsApp button - safe position well inside screen */
   .whatsapp-float {
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     width: 52px;
     height: 52px;
     font-size: 1.6rem;
+  }
+
+  /* Service buttons - prevent overflow */
+  .service-btn {
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.88rem;
+  }
+
+  /* Containers - prevent any child overflow */
+  .service-card,
+  .social-banner,
+  .story-section,
+  .quote-section {
+    overflow: hidden;
   }
 }
 
