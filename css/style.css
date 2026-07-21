@@ -230,7 +230,7 @@ img {
 }
 
 .logo-img {
-  height: 80px;
+  height: 140px;
   width: auto;
   object-fit: contain;
 }
@@ -361,7 +361,7 @@ img {
 
 /* Hero Section */
 .hero {
-  padding-top: 9.5rem;
+  padding-top: 12rem;
   padding-bottom: 5rem;
   position: relative;
   background: radial-gradient(circle at top right, rgba(232, 244, 248, 0.8), transparent 55%),
