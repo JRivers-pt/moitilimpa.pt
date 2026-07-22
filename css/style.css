@@ -231,7 +231,7 @@ img {
 }
 
 .logo-img {
-  height: 140px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
@@ -1069,7 +1069,7 @@ img {
   }
 
   .logo-img {
-    height: 90px;
+    height: 60px;
   }
 
   .nav-actions .btn {
@@ -1216,5 +1216,5 @@ img {
 @media (max-width: 400px) {
   .hero-title { font-size: 1.65rem; }
   .container { padding: 0 1rem; }
-  .logo-img { height: 75px; }
+  .logo-img { height: 52px; }
 }
