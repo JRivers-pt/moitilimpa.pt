@@ -231,7 +231,7 @@ img {
 }
 
 .logo-img {
-  height: 105px;
+  height: 130px;
   width: auto;
   object-fit: contain;
 }
@@ -390,7 +390,7 @@ img {
 
 /* Hero Section */
 .hero {
-  padding-top: 12rem;
+  padding-top: 14rem;
   padding-bottom: 5rem;
   position: relative;
   background: radial-gradient(circle at top right, rgba(232, 244, 248, 0.8), transparent 55%),
@@ -1069,7 +1069,7 @@ img {
   }
 
   .logo-img {
-    height: 80px;
+    height: 100px;
   }
 
   .nav-actions .btn {
@@ -1216,5 +1216,5 @@ img {
 @media (max-width: 400px) {
   .hero-title { font-size: 1.65rem; }
   .container { padding: 0 1rem; }
-  .logo-img { height: 68px; }
+  .logo-img { height: 85px; }
 }
