@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Also construct WhatsApp prefilled message URL
       const textMessage = `Olá Moitilimpa.pt! Meu nome é ${name}. Gostaria de um orçamento para ${service} em ${location}. Contacto: ${phone}. Msg: ${message}`;
-      const waUrl = `https://wa.me/351910000000?text=${encodeURIComponent(textMessage)}`;
+      const waUrl = `https://wa.me/351912303096?text=${encodeURIComponent(textMessage)}`;
 
       // Reset form after short delay
       setTimeout(() => {
