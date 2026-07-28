@@ -284,6 +284,12 @@ img {
   transform: translateY(-2px);
 }
 
+.social-icon-btn.wa:hover {
+  background-color: #25D366;
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
