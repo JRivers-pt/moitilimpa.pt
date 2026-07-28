@@ -296,6 +296,33 @@ img {
   gap: 1rem;
 }
 
+.nav-cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.header-socials .social-icon-btn {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  color: var(--gray-600);
+}
+
+.header-socials .social-icon-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+
 .mobile-toggle {
   display: none;
   background: none;
@@ -1080,6 +1107,10 @@ img {
 
   .nav-actions .btn {
     display: none; /* hide CTA button on mobile, nav-menu has it */
+  }
+
+  .header-socials {
+    display: none;
   }
 
   /* Hero */
