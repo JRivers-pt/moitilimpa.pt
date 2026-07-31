@@ -942,7 +942,36 @@ img {
 }
 
 .fb-card .social-card-icon { background-color: #1877F2; }
-.ig-card .social-card-icon { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
+/* Floating WhatsApp Button (Clean, Small, Discret) */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.55);
+  color: #FFFFFF;
+}
+
+.whatsapp-float svg {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+}
 
 /* Lightbox Modal */
 .lightbox-modal {
@@ -1221,13 +1250,17 @@ img {
     font-size: 1rem;
   }
 
-  /* WhatsApp button - safe position well inside screen */
+  /* Floating WhatsApp Button Mobile Position & Size */
   .whatsapp-float {
-    bottom: 1.5rem;
-    right: 1.5rem;
-    width: 52px;
-    height: 52px;
-    font-size: 1.6rem;
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .whatsapp-float svg {
+    width: 23px;
+    height: 23px;
   }
 
   /* Service buttons - prevent overflow */
